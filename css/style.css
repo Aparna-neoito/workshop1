@@ -1030,6 +1030,10 @@ margin-bottom: 100px;
 .navbar-2{
   position: relative;
 }
+.toggle{
+  display: flex;
+  font-size: 30px;
+}
 .toggle-active ul{
   display: flex;
   flex-direction: column;
@@ -1040,68 +1044,62 @@ margin-bottom: 100px;
   top: -10px;
   background-color: #E4FAF4;
 }
-
-
-
-
-
-    .logo{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
     
     
-    .search{
-      display: flex;
-      gap: 10px;
-    }
-    .neo-funds-search{
-      text-align: left;
-    }
-    .header{
-        display: none;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .navbar-1{
-     display: flex;
-     gap: 10px;
-     width: 100%;
-    }
-    .navbar-2{
-        width: 100%;
-    }
-    .navbar .navbar-1 .nf{
-        width: 22px;
-        height: 22px;
-    }
-    .neo-funds{
-        font-size: 20px;
-    }
-    .navbar {
-        display: flex;
-       align-items: flex-start;
-    }
-    .search{
-        width: 100%;
-    }
-    /*responsive nav*/
+.search{
+  display: flex;
+  gap: 10px;
+}
+.neo-funds-search{
+  text-align: left;
+}
+.header{
+    display: none;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.navbar-1{
+ display: flex;
+ gap: 10px;
+ width: 100%;
+}
+.navbar-2{
+    width: 100%;
+}
+.navbar .navbar-1 .nf{
+    width: 22px;
+    height: 22px;
+}
+ .neo-funds{
+    font-size: 20px;
+}
+.navbar {
+    display: flex;
+   align-items: flex-start;
+}
+.search{
+    width: 100%;
+}
+/*responsive nav*/
     
 
-    /*sectionA*/
-
-    .rectangle-1{
-        padding-top:60px;
-        padding-bottom: 50px;
-        gap: 25px;
-    }
-    .rectangle-1 div:first-child{
-        width: 100%;
-        padding-right:1px;
+  
+.rectangle-1{
+    padding-top:60px;
+    padding-bottom: 50px;
+    gap: 25px;
+}
+.rectangle-1 div:first-child{
+    width: 100%;
+    padding-right:1px;
     }
     .investing-made-easy-a{
       font-size: 30px;
@@ -1127,12 +1125,12 @@ margin-bottom: 100px;
       justify-content: space-between;
 
     }
-    .base-flex{
+  .base-flex{
       display: flex;
       gap: 10px;
      
     }
-    .base-logo {
+  .base-logo {
         width: 45px;
         height: 45px;
         opacity: 1;
@@ -1144,35 +1142,14 @@ margin-bottom: 100px;
     }
     
     .base-div {
-      align-items: center;
-      height: 100px;
-      width: 100px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 10px;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .trusted-by-millions{
       font-size: 30px;
     }
