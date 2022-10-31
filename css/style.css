@@ -1,73 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container{
-    width: 1200px;
-    margin: auto;
+  width: 1200px;
+  margin: auto;
 }
 a{
-    text-decoration:none;
-    color: black;
+  text-decoration:none;
+  color: black;
 }
 li{
-    list-style: none;
+  list-style: none;
 }
-
 u{
-    text-decoration-style: solid;
-    text-decoration-color: #00D09C;
+  text-decoration-style: solid;
+  text-decoration-color: #00D09C;
 }
-
 .fixed {
-    cursor: pointer;
-    position: fixed;
-    bottom:0;
-    right: 0;
-    transition: 0.5s;
-    
-    
+  cursor: pointer;
+  position: fixed;
+  bottom:0;
+  right: 0;
+  transition: 0.5s;    
 }
 .fixed:hover{
-    bottom: 10px;
-    
-}
-.vl{
-    border-right: 1px solid #222222;
-    opacity: 0.1;
-    height: 20px;
-    margin: auto;
-   padding-left: 5px;
-   padding-right: 5px;
-   margin-right: 15px;
+  bottom:10px;   
 }
 .accordion-footer{
-    display: none;
+  display: none;
   }
 .toggle{
   display: none;
 }
-/*select*/
-.head-links{
-  position: relative;
-}
-select{
- border: none;
- background-color: #E4FAF4;
-}
-select:focus{
-  border: none;
-}
-.drop{
-  position: absolute;
-  top: 5px;
-  right:5px ;
-}
 
+.toggles{
+  display: none;
+  cursor: pointer;
+}
 /*navhead*/
+
+
 .header{
   width: 100%;
   background-color: #E4FAF4;
@@ -81,17 +56,15 @@ select:focus{
   align-items: center;
 }
 .head ul {
-  display: flex;
- 
+  display: flex; 
 }
 .head li{
   margin-right: 5px;
 }
-
 .phone {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 .download-app{
   color: #222222;
@@ -101,333 +74,329 @@ select:focus{
   font-family: 'Roboto', sans-serif;
 }
 .head-links{
-    color: #222222;
-    font-family: Avenir;
-    font-size: 13px;
-    line-height: 17.76px;  
-    font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 13px;
+  line-height: 17.76px;
+  font-family: 'Roboto', sans-serif;  
 }
 select{
   appearance: none;
+  border: none;
+  background-color: #E4FAF4;
 }
+.vl{
+  border-right: 1px solid #222222;
+  opacity: 0.1;
+  height: 20px;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 15px;
+}
+
 
 /*navbar*/
 
 
-
 .navbar{
-    padding-top: 25px;
-    height: 102px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+  padding-top: 25px;
+  height: 102px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo{
-    display: flex;
-    gap:  20px;
+  display: flex;
+  gap:20px;
 }
 .navbar .navbar-1 .nf{
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 .neo-funds {
-    color: #222222;
-    font-family: Futura;
-    font-size: 26px;
-    line-height: 34px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-  }
-
+  color: #222222;
+  font-family: Futura;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 .navbar-2{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 15px;
+} 
+.search2{
+  display: none;
 }
 .search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:10px;
-    background-color: #F5F5F5;
-    border-radius: 6px;
-    width: 250px;
-    height: 42px;
-    border: none;
-    padding: 20px;
-    outline: none;
-}
-.search i {
-    width: 100%;
-    color: #b1adad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  width: 250px;
+  height: 42px;
+  border: none;
+  padding: 20px;
+  outline: none;
 }
 .neo-funds-search {
-    width: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
-
 .navbar ul {
-    list-style: none;
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar ul li{
-    padding: 15px;
+  padding: 15px;
 }
 .navbar-2-txt ul{
-    color: #222222;
-    font-family: Avenir;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: right;
-    opacity: 0.699999988079071;
-    font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  opacity: 0.699999988079071;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 /*section A*/
 
 
- .bold{
-    font-weight: 800;
-  }
-  .rectangle-1 {
-    background-color: #FFFFFF;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-  }
-  .rectangle-1 div:first-child{
-    width: 50%;
-    padding-right: 150px;
-  }
-  .rectangle-1 div:last-child{
-    width: 50%;
-  }
-  .image1{
-    width: 100%;
-  }
-  .investing-made-easy-a {
-    color: #222222;
-    font-family: Avenir;
-    font-size: 45px;
-    line-height: 50px;
-    padding-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .indias-fastest-grow {
-    color: #222222;
-    font-family: Avenir;
-    font-size: 20px;
-    line-height: 30px;
-    opacity: 0.699999988079071;
-    padding-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-    
-  }
- 
-  .rect-1-btn {
-    cursor: pointer;
-    background-color: #00D09C;
-    border-radius: 4px;
-    box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
-    width: 209px;
-    height: 52px;
-    text-align: center;
-    border: none;
-    margin-top: 20px;
-  }
-  .rect-1-btn:hover{
-    background-color: #0caa82;
-    transition:1s;
-  }
-  .get-started-now {
-    color: #FFFFFF;
-    font-family: Avenir;
-    font-size: 18px;
-    line-height: 24.59px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-  }
- 
+.bold{
+  font-weight: 800;
+}
+.rectangle-1 {
+  background-color: #FFFFFF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.rectangle-1 div:first-child{
+  width: 50%;
+  padding-right: 150px;
+}
+.rectangle-1 div:last-child{
+  width: 50%;
+}
+.image1{
+  width: 100%;
+}
+.investing-made-easy-a {
+  color: #222222;
+  font-family: Avenir;
+  font-size: 45px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.indias-fastest-grow {
+  color: #222222;
+  font-family: Avenir;
+  font-size: 20px;
+  line-height: 30px;
+  opacity: 0.699999988079071;
+  padding-bottom: 30px;  
+  font-family: 'Roboto', sans-serif;
+}
+.rect-1-btn {
+  cursor: pointer;
+  background-color: #00D09C;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
+  width: 209px;
+  height: 52px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+}
+.rect-1-btn:hover{
+  background-color: #0caa82;
+  transition:1s;
+}
+.get-started-now {
+  color: #FFFFFF;
+  font-family: Avenir;
+  font-size: 18px;
+  line-height: 24.59px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
 
 /*base*/
 
 .base {
-    width: 100%;
-    height: 190px;
-    background-color: #E4FAF4;
-    box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
-    display: flex;
+  width: 100%;
+  height: 190px;
+  background-color: #E4FAF4;
+  box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
+  display: flex;
 }
 .base-box{
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 .base-1{
-    width: 50%;
+  width: 50%;
 }
 .base-2{
-    width: 50%;
-    align-items: flex-end;
-   
+  width: 50%;
+  align-items: flex-end;
 }
 .trusted-by-millions {
-    color: #222222;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Futura;
-    line-height: 39px;
-    padding-bottom:20px;
-    font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Futura;
+  line-height: 39px;
+  padding-bottom:20px;
+  font-family: 'Roboto', sans-serif;
 }
 .we-are-registered-as {
-    color: #222222;
-    font-size: 17px;
-    font-family: Avenir;
-    line-height: 29px;
-    opacity: 0.699999988079071;
-    font-family: 'Roboto', sans-serif;
-    
+  color: #222222;
+  font-size: 17px;
+  font-family: Avenir;
+  line-height: 29px;
+  opacity: 0.699999988079071;
+  font-family: 'Roboto', sans-serif;
 }
-
 .base-div {
-    border: 1px solid rgba(0, 208, 156, 0.2);
-    border-radius: 6px;
-    align-items: center;
-    height: 110px;
-    width: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
+  border: 1px solid rgba(0, 208, 156, 0.2);
+  border-radius: 6px;
+  align-items: center;
+  height: 110px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
 }
-  
 .base-flex{
-    display: flex;
-    justify-content: flex-end;
-    gap: 50px;
-    
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;  
 }
-  
 .base-img-txt {
-    color: #222222;
-    font-family: Avenir;
-    font-size: 14px;
-    line-height: 19px;
-    opacity: 0.699999988079071;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-  }
-.base-logo {
-    width: 55px;
-    height: 55px;
-    opacity: 1;   
+  color: #222222;
+  font-family: Avenir;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.699999988079071;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
 }
-  
+.base-logo {
+  width: 55px;
+  height: 55px;
+  opacity: 1;   
+}
 
- /*section B*/
-     
-.rectangle-copy-2 {
-    background-color: #FFFFFF;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    display: flex;
-    align-items: center;
+
+
+/*section B*/
    
+.rectangle-copy-2 {
+  background-color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center; 
 }
 .yoga-flex{
-    display: flex;
-    justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 }
 .yoga-illustration {
-     width: 50%;
-        
+  width: 50%;      
 }
 .yoga-txt{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-   
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .yoga-txt li{
-      color: #222222;
-      font-family: Avenir;
-      font-size: 17px;
-      line-height: 28px;
-      opacity: 0.699999988079071;
-      font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-family: Avenir;
+  font-size: 17px;
+  line-height: 28px;
+  opacity: 0.699999988079071;
+  font-family: 'Roboto', sans-serif;
 }
-.yoga
 .flex-yoga{
-      display: flex;
-      gap: 20px;
-      margin-bottom: 15px;
-    }
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
 .about-mutal-funds {
   padding-bottom: 10px;
+  font-size: 18px;
+  opacity: 0.599999988079071;
+  
 }
 .yoga-learn-with-fund-guru {
-      color: #222222;
-      font-family: Futura;
-      font-size: 40px;
-      line-height: 52px;
-      text-align: left;
-      margin-bottom: 10px;
-      font-family: 'Roboto', sans-serif;
+  color: #222222;
+  font-family: Futura;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
 }     
 .yoga-btn{
-    display: flex;
-    gap: 30px;
-    padding-top: 50px;
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
 }
 .know-more {
-      color: #FFFFFF;
-      font-family: Avenir;
-      font-size: 18px;
-      line-height: 24.59px;
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  font-family: Avenir;
+  font-size: 18px;
+  line-height: 24.59px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 .know-more-button {
-      cursor: pointer;
-      border: none;
-      background-color: #00D09C;
-      border-radius: 4px;
-      box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
-      width: 163px;
-      height: 52px;
+  cursor: pointer;
+  border: none;
+  background-color: #00D09C;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px 0 rgba(90, 202, 157, 0.05);
+  width: 163px;
+  height: 52px;
 }
 .know-more-button:hover{
-    background-color: #0caa82;
-    transition:1s;
-  }
-
-    
-
+  background-color: #0caa82;
+  transition:1s;
+}
 .watch-flex{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 .watch-flex .watch-video{
+  cursor: pointer;
   color: #00D09C;
   font-family: Avenir;
   font-size: 19px;
@@ -436,17 +405,23 @@ select{
   font-family: 'Roboto', sans-serif;
 }
 .watch-flex .video-icon img{
+  cursor: pointer;
   width: 30px;
   height: 30px;
+}
+.watch-flex .video-icon img:hover{
+  width: 31px;
+  height: 31px;
+  transition:0.9s;
 }
 .watch-flex {
   font-size: 40px;
   color: #00D09C;
+  font-family: 'Roboto', sans-serif;
 }
 
-
 /*section c*/
-      
+    
 .rectangle-copy-3 {
   background-image: linear-gradient(180deg, #E4FAF4 0%, #FFFFFF 100%);
   padding-top: 62px;
@@ -459,25 +434,21 @@ select{
 }
 .rect-3-text{
   height: 850px;
-  width: 50%;
-  
+  width: 50%;  
 }
 .bitmap{
   height: 800px;
-  width: 50%;
- 
+  width: 50%; 
 }
 .bitmap-img{
- height: 780px;
- width: 100%;
-margin-top: 10px;
-margin-bottom: 100px;
-  
+  height: 780px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 100px;
 }
 .txt-img-div{
- display: flex;
- gap: 60px;
-  
+  display: flex;
+  gap: 60px;
 }
 .img-div-img{
   width: 60px;
@@ -488,14 +459,12 @@ margin-bottom: 100px;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-}
-
+} 
 .img-div{
   margin-top: 50px;
- width: 260px;
- height: 360px; 
-}
-
+  width: 260px;
+  height: 360px; 
+} 
 .ask-the-expert {
   padding-top: 100px;
   color: #222222;
@@ -504,9 +473,7 @@ margin-bottom: 100px;
   line-height: 52px;
   text-align: left;  
   font-family: 'Roboto', sans-serif;
-}
- 
-
+} 
 .you-can-schedule-a-m {
   padding-top: 20px;
   color: #222222;
@@ -516,13 +483,9 @@ margin-bottom: 100px;
   opacity: 0.699999988079071;
   text-align: left;
   font-family: 'Roboto', sans-serif;
- 
 }
-
 .shape {
-  
-    background-color: #E8F9F5;
-   
+  background-color: #E8F9F5;
 }
 .investing-made-easy {
   padding-top: 34px;
@@ -552,7 +515,6 @@ margin-bottom: 100px;
   width: 159px;
   height: 52px;
   border: none;
-
 }
 .rectangle-2-btn {
   margin-top: 36px;
@@ -563,7 +525,6 @@ margin-bottom: 100px;
   width: 159px;
   height: 52px;
   border: none;
-
 }
 .rectangle-2:hover{
   transition:1s;
@@ -599,9 +560,7 @@ margin-bottom: 100px;
   opacity: 0.699999988079071;
   text-align: left;
   font-family: 'Roboto', sans-serif;
-  
 }
-
 .schedule-now {
   color: #FFFFFF;
   font-family: Avenir;
@@ -610,86 +569,20 @@ margin-bottom: 100px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
-
-
   
-    /*section D*/
 
-    .rectangle-copy-d {
-        background-color: #FFFFFF;
-        text-align: center;
-        height: 498px;
-        
-      }
-      .chat-flex{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-     
-  
-      .manage-your-investme {
-        color: #222222;
-        font-family: FuturaBT;
-        font-size: 30px;
-        line-height: 35.96px;
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: 'Roboto', sans-serif;
-        padding-top: 80px;
-      }
-      .now-you-will-be-at-e {
-        color: #222222;
-        font-family: Avenir;
-        font-size: 17px;
-        line-height: 29px;
-        opacity: 0.699999988079071;
-        width: 100%;
-        margin-bottom: 20px;
-        font-family: 'Roboto', sans-serif;
-      }
-      .download-the-app-now {
-        color: #222222;
-        font-family: FuturaBT;
-        font-size: 25px;
-        line-height: 28.77px;
-        text-align: center;
-        margin-bottom: 20px;
-        font-family: 'Roboto', sans-serif;
-        padding-top: 30px;
-      }
-      .background{
-        border-radius: 4.1px;
-        width: 200px;
-        height: 50px;
-        margin: 10px;
-        
-      }
-      .chat-flex img{
-        
-        cursor: pointer;
-        width: 200px;
-        height: 70px;
-      }
-      .bg-hover:hover{
-        
-      }
-       /*section D*/
+  /*section D*/
 
-   .rectangle-copy-d {
+  .rectangle-copy-d {
     background-color: #FFFFFF;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    
+    height: 498px;  
   }
   .chat-flex{
     display: flex;
     justify-content: center;
     align-items: center;
   }
- 
-
   .manage-your-investme {
     color: #222222;
     font-family: FuturaBT;
@@ -697,6 +590,7 @@ margin-bottom: 100px;
     line-height: 35.96px;
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 80px;
     font-family: 'Roboto', sans-serif;
   }
   .now-you-will-be-at-e {
@@ -716,6 +610,7 @@ margin-bottom: 100px;
     line-height: 28.77px;
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 30px;
     font-family: 'Roboto', sans-serif;
   }
   .background{
@@ -723,10 +618,8 @@ margin-bottom: 100px;
     width: 200px;
     height: 50px;
     margin: 10px;
-    
   }
   .chat-flex img{
-    
     cursor: pointer;
     width: 200px;
     height: 70px;
@@ -738,555 +631,439 @@ margin-bottom: 100px;
 
 
 /*footer*/
-    
+  
 .foot-rectangle {
-    background-color: #FFFFFF;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer{
-    box-shadow: 0 -35px  20px 0 rgba(0, 0, 0, 0.03);
-  }
-  
-  .foot-logo{
-    gap: 10px;
-  }
-  .foot-ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 150px;
-    text-align: left;
-  }
- 
-  .footer-ul{
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    
-  }
-  .footer-logo{
-    width: 100px;
-    height: 100px;
-  }
-  .neo-funds {
-    color: #222222;
-    font-family: Futura;
-    font-size: 30px;
-    line-height: 39px;
-    text-align: left;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-  }
-  .foot-rectangle ul li{
-    padding: 7px;
-
-  }
-  .download-img{
-    
-    opacity: 0.699999988079071;
-  }
-  .thick-links{
-    font-size: 17px;
-    font-weight: bold;
-  }
-  .thin {
-    font-size: 15;
-    opacity: 0.699999988079071;
-  }
- /*foot*/
-
-  hr{
-    width: 100%;
-    opacity: 0.199999988079071;
-  }
-  .foot{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-  }
-  .foot-logo-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .flex-foot{
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .flex-foot img{
-    cursor: pointer;
-    padding: 10px;
-    opacity: 0.699999988079071;
-  }
-  .copyright-2019-mutal {
-    color: #222222;
-    font-family: Avenir;
-    font-size: 12px;
-    line-height: 30px;
-    opacity: 0.699999988079071;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-  }
-@media (max-width:1220px){
-  .container{
-    width: 992px;
-  }
-}
-@media (max-width: 992px) {
-       .container {
-        width: 768px;
-       }
-    }
-  
-  
-/*tablet*/
-@media (max-width: 768px){
-  .container{
-      width: 576px;
-  }
-  /*navbar*/
-
-  
-  .cont {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-  .bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: #333;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-    
-
-  /*sectionA*/
-
-  .rectangle-1{
-      display: flex;
-      flex-direction: column;
-      gap: 50px;
-  }
-  .rectangle-1 div:first-child{
-      width: 100%;
-    }
-  .rectangle-1 div:last-child{
-      width: 100%;
-  }
-  /*base*/
-  .base-box{
-      display: flex;
-      flex-direction: column;
-   }
-  .base-1{
-      width: 100%;
-  }
-  .base-2{
-      width: 100%;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-  }
-  /*section B*/
-  .rectangle-copy-2 {
-      display: flex;
-      flex-direction: column;
-  }
-  .yoga-illustration {
-      width: 100%;
-         
- }
- .yoga-txt{
-     width: 100%;   
- }
-  /*sec C */
-  .rectangle-copy-3{
-     padding-bottom: 50px;
-     padding-top: 50px;
-  }
-  .rect-5-txt{
-      width: 100%;
-  }
-  .flex{
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-    .bitmap{
-      width: 100%;
-      display: flex;
-      justify-content:center ;
-    }
-    .watch-flex{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap:10px;
-
-    }
- /*footer*/
- .foot-rectangle{
-  display: none;
- }
- .accordion-footer{
-  display: block;
- }
-
-/*accodion*/
-.foot-rectangle{
-  display: none;
-}
-.accordion-footer{
-  display: block;
-}
-.footer-logo{
-  width: 50px;
-  height: 50px;
-}
-.accordion{
-  display: flex;
-  flex-direction: column;
- 
-  gap: 10px;
+  background-color: #FFFFFF;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  gap: 200px;
 }
-.accordion-btn{
-  background-color: #F5F5F5;
-  color: #222222;
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  border: none;
+.footer{
+  box-shadow: 0 -35px  20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.foot-logo{
+  gap: 10px;
+}
+.foot-ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 150px; ;
   text-align: left;
-  outline: none;
-  font-size: 18px;
-  transition: 1s;
+}
+.footer-ul{
+  display: flex;
+  justify-content: space-between;
+  text-align: left; 
+}
+.footer-logo{
+  width: 100px;
+  height: 100px;
+}
+.neo-funds {
+  color: #222222;
+  font-family: Futura;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: left;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+.foot-rectangle ul li{
+  padding: 7px;
+}
+.download-img{
+  opacity: 0.699999988079071;
+}
+.thick-links{
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.thin {
+  font-size: 15;
+  opacity: 0.699999988079071;
+  font-family: 'Roboto', sans-serif;
+}
+/*foot*/
+
+hr{
+  width: 100%;
+  opacity: 0.199999988079071;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.foot-logo-flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.accordion-btn::after{
-  content: '+';
-}
-
-
-.foot-link {
-  padding-bottom: 20px;
-   font-size: 16px;
-   display: flex;
-   flex-direction: column;
-   gap:20px;
- }
- .foot-link li{
-   padding: 5px;
- }
- .contact-as{
-   display: flex;
-   justify-content: space-between;
- }
- 
- .download{
-   width: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- .toggle{
+.flex-foot{
   display: flex;
-  font-size: 30px;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.flex-foot img{
+  cursor: pointer;
+  padding: 10px;
+  opacity: 0.699999988079071;
 }
-
-
-
-
-
-
-/*medium device*/
-
-@media (max-width: 576px) {
-  .container{
-    width: 100%;
-    margin: auto;
-    padding: 20px;
+.copyright-2019-mutal {
+  color: #222222;
+  font-family: Avenir;
+  font-size: 12px;
+  line-height: 30px;
+  opacity: 0.699999988079071;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
 }
-   
-.navbar-2-txt ul{
-  display: none;
-  opacity: 1;
-}
-.navbar-2{
+.head-links{
   position: relative;
 }
-.toggle{
-  display: flex;
-  font-size: 30px;
+select{
+ border: none;
+ background-color: #E4FAF4;
 }
-.toggle-active ul{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 200px;
+select:focus{
+  border: none;
+}
+.drop{
   position: absolute;
-  right: 0;
-  top: -10px;
-  background-color: #E4FAF4;
+  top: 5px;
+  right:5px ;
 }
-.logo{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-    
-    
-.search{
-  display: flex;
-  gap: 10px;
-}
-.neo-funds-search{
-  text-align: left;
-}
-.header{
-    display: none;
-}
-.navbar{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.navbar-1{
- display: flex;
- gap: 10px;
- width: 100%;
-}
-.navbar-2{
-    width: 100%;
-}
-.navbar .navbar-1 .nf{
-    width: 22px;
-    height: 22px;
-}
- .neo-funds{
-    font-size: 20px;
-}
-.navbar {
-    display: flex;
-   align-items: flex-start;
-}
-.search{
-    width: 100%;
-}
-/*responsive nav*/
-    
+
 
   
-.rectangle-1{
-    padding-top:60px;
-    padding-bottom: 50px;
-    gap: 25px;
-}
-.rectangle-1 div:first-child{
-    width: 100%;
-    padding-right:1px;
-    }
-    .investing-made-easy-a{
-      font-size: 30px;
-    }
-    .indias-fastest-grow {
-      font-size: 17px;
-    }
-    .image1{
-        display: none;
-    }
-    /*base*/
-    .base{
-        width: 100%;
-        height: 403px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .base-2{
-      width: 100%;
-      padding-top: 45px;
-      
-      display: flex;
-      justify-content: space-between;
 
-    }
-  .base-flex{
-      display: flex;
-      gap: 10px;
-     
-    }
-  .base-logo {
-        width: 45px;
-        height: 45px;
-        opacity: 1;
-        margin:15px 15px 0 15px;
-      }
-    .base-img-txt{
-        font-size: 11px;
-        padding: none;
-    }
-    
-    .base-div {
-    align-items: center;
-    height: 100px;
-    width: 100px;
+@media (max-width:1220px){
+  .container{
+    width: 992px;
+  }
+/*navbar*/
+  .navbar ul li{
+    padding:5px;
+  }
+  .navbar-2{
+    gap: 5px;
+  }
+
+/*section C*/
+
+  .rect-copy-3 {
+    height: 700px;
+  }
+  .bitmap{
+    height: 200px;
+    width: 50%;
+  }
+  .bitmap-img{
+    height: 500px;
+  }
+  .img-div{
+    margin-top: 50px;
+    height: 360px; 
+  }
+  .txt-img-div{
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    }
-    .trusted-by-millions{
-      font-size: 30px;
-    }
-    .we-are-registered-as{
-      font-size: 17px;
-    }
-    /*section B*/
-    .rectangle-copy-2 {
-      padding-top: 70px;
-      padding-bottom: 80px;
-    }
-    .yoga-illustration{
-     padding-bottom: 20px;
-    }
-    .yoga-btn{
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-    }
-    .yoga-learn-with-fund-guru{
-      font-size: 30px;
-    }
-    /*section c*/
-  
-  .rectangle-copy-3 {
+    gap: 10px;
+  }
+  .ask-the-expert{
     padding-top: 5px;
-    height: 900px
-   }
-   .rect-3-txt{
-    height:900px ;
+  }
+  .rect-3-txt{
+    display: flex;
+    flex-direction: column;
+  }
+  .rectangle-2{
+    padding-top: 5px;
+    margin-top: 43px;
+  }
+  .rectangle-2-btn{
+    padding-top: 5px;
+    margin-top: 15px;
+  }
+  .rectangle-copy-3 {
+    height: 550px;
+  }
+  .txt-img-div{
+    display: flex;
+    padding-top: 5px;
+  }
+  .img-div{
+    margin-top: 5px;
+  }
+  .investing-made-easy {
+    padding-top: 10px;
+  }
+  .schedule-a-meeting{
+    padding-top: 10px;
+  }
+  .foot-ul{
+    gap:50px;
+  }
+  .foot-rectangle{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+
+
+
+@media (max-width: 992px) {
+    .container {
+     width: 768px;
+    }
+/*navbar*/
+  .navbar-1{
     width: 100%;
-   }
-   .flex{
-     display: flex;
-     flex-direction: column;
-   }
-   .you-can-schedule-a-m{
-    padding-bottom: 20px;
-   }
-   .img-div{
-     margin-top: 30px;
-     height: 326px; 
-   }
-   .ask-the-expert {
-    padding-top: 15px;
-   }
-   .txt-img-div{
-     display: flex;
-     flex-direction: column;
-   }
-   .rectangle {
-     width: 30px;
-     height: 30px;
-   }
-   
-   .shape {
-     background-color: #00D09C;
-   }
-   .btn-flex{
-     display: flex;
-     justify-content: space-between;
-   }
-   .bitmap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle{ 
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .cross{
     display: none;
-   }
+   
+  }
+  .navbar-2-txt{
+    display: none;
+  } 
+  .menu ul{
+    color: #FFFFFF;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding:30px;
+
+  }
+  .menu ul li{
+    font-size: large;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar{
+    position: relative;
+  }
+  .event{
+    display: block;
+    position: absolute;
+    top:90px;
+    right:0;
+    background-color: #E4FAF4;
+    width: 100%;
+    height:150px;
+    z-index: 1;
+    transition: 1s;
+  }
+  .search{
+    display: none;
+  }
+  .search2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    width: 250px;
+    height: 42px;
+    border:none;
+    padding: 20px;
+    outline: none;
+  }
+/*section A*/
+
+  .rectangle-1 div:first-child{
+    padding-right:8px;
+  }
+/*base*/
+  .base{
+    height: 240px;
+  }
+  .base-1{
+    padding-right: 10px;
+  }
+ .img-div{
+    margin-top:0;
+    height:600px; 
+    width: 180px;
+  }
+  .txt-img-div{
+    margin-top:0;
+  }
+  .you-can-schedule-a-m{
+    padding-top: 5px;
+  }
+/*footer*/
+  .foot-rectangle{
+    gap:0px;
+  }
+}
+
+
+
+@media (max-width: 768px){
+  .container{
+      width: 576px;
+  }
+
+/*navbar*/
+  .navbar-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-2-txt{
+    display: none;
+  } 
+  .menu ul{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+  }
+  .menu ul li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container{
+    position: relative;
+  }
+  .event{
+    display: block;
+    position: absolute;
+    top:90px;
+    right:0;
+    background-color: #E4FAF4;
+    width:100%;
+    height:300px;
+  }
+  .navbar-2-txt ul li{
+    margin: 5px;
+    font-size:18px;
+  }
+ 
+
+/*sectionA*/
+
+  .rectangle-1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .rectangle-1 div:first-child{
+    width: 100%;
+  }
+  .rectangle-1 div:last-child{
+    width: 100%;
+  }
+
+
+/*base*/
+
+  .base{
+    height: 340px;
+  }
+  .base-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .base-1{
+    width: 100%;
+  }
+  .base-2{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    
+  }
+  
+/*section B*/
+
+  .rectangle-copy-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .yoga-illustration {
+    width: 100%;    
+  }
+  .yoga-txt{
+   width: 100%;   
+  }
+  .yoga-btn{
+ 
+  }
+/*section c*/
+  .rectangle-copy-3{
+    height: 1000px;
+    margin-bottom: 200px;
+  }
+  .rect-copy-3{
+    display: flex;
+    flex-direction: column;
+  }
+  .bitmap{
+    width: 100%;
+  }
+  .bitmap-img{
+    height: 620px;
+    width: 100%;
+  }
+  .txt-img-div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-div{
+    margin-top: 50px;
+    width: 260px;
+    height: 360px; 
+  }   
+
 /*section D*/
- .rectangle-copy-d{
-  margin-bottom: 100px;
- }
- .chat-flex img{
-    width: 160px;
-    height: 70px;
+  .rectangle-copy-d {
+    margin-top: 20px;
+    height: 400px;
   }
-  .manage-your-investme{
-    padding-top: 150px;
+
+/*footer*/
+  .foot-rectangle{
+    display: none;
   }
-  .download-the-app-now {
-    padding-top: 50px;
+  .accordion-footer{
+    display: block;
   }
   
 /*accodion*/
-.foot-rectangle{
+  .foot-rectangle{
     display: none;
-}
-.accordion-footer{
+  }
+  .accordion-footer{
     display: block;
-}
-.footer-logo{
+  }
+  .footer-logo{
     width: 50px;
     height: 50px;
-}
-.accordion{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-  .accordion-btn{
-    color: #222222;
-    background-color: #FFFFFF;
-    border: 1px solid #F0F0F0;
-    cursor: pointer;
-    padding: 20px;
-    width: 100%;
-    text-align: left;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-
   }
   
-  .accordion-btn::after{
-    content: '+';
-    font-size: 20px;
-    opacity: 0.4000000059604645;
-  }
-  .active::after{
-    content: '-';
-    font-size: 30px;
-    opacity: 0.4000000059604645;
-    text-align: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-.content{
-    display: none;
-    overflow: hidden;
-}
-.content p{
-  
-  padding:10px 20px 10px 20px;
-  font-family: 'Roboto', sans-serif;
-}
   .foot-link {
-
+    padding-bottom: 20px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -1305,49 +1082,424 @@ margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+ 
   
+/*accodion*/
+  .foot-rectangle{
+    display: none;
+  }
+  .accordion-footer{
+    display: block;
+  }
+  .footer-logo{
+    width: 50px;
+    height: 50px;
+  }
+  .accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  
+  }
+  .accordion-btn{
+    color: #222222;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .accordion-btn::after{
+    content: '+';
+    font-size: 20px;
+    opacity: 0.4000000059604645;
+  }
+  .active::after{
+    content: '-';
+    font-size: 30px;
+    opacity: 0.4000000059604645;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .content{
+    display: none;
+    overflow: hidden;
+  }
+  .content p{
+  
+    padding:10px 20px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+}
+  
+  
+
+@media (max-width: 576px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  .header{
+    display: none;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }  
+  .toggle{ 
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .bar{
+    font-size: 30px;
+  }
+  .navbar-2-txt{
+    display: none;
+  } 
+  .menu ul{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:10px;
+    margin: 5px;
+  }
+  .menu ul li{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .toggle{
+    position: relative;
+  }
+  .event{
+    display: block;
+    position: absolute;
+    top:60px;
+    right:0;
+    background-color: #E4FAF4;
+    width:100%;
+    height:300px;
+  }
+  .search2{
+    display: none;
+  }
+  .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    width: 100%;
+    height:42px;
+    border:none;
+    padding: 20px;
+    outline: none;
+  }
+  .neo-funds-search{
+    text-align: left;
+  }
+  .navbar{
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navbar-1{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  .navbar-2{
+    width: 100%;
+    height: 100px;
+  }
+  .navbar .navbar-1 .nf{
+    width: 22px;
+    height: 22px;
+  }
+  .neo-funds{
+    font-size: 20px;
+  }
+  .navbar {
+    display: flex;
+    align-items: flex-start; 
+  }
+  
+/*Section A*/  
+  
+  .rectangle-1{
+    padding-top:50px;
+    padding-bottom: 50px;
+    gap: 25px;
+  }
+  .rectangle-1 div:first-child{
+    width: 100%;
+    padding-right:1px;
+  }
+  .investing-made-easy-a{
+    font-size: 30px;
+  }
+  .indias-fastest-grow {
+    font-size: 17px;
+  }
+  .image1{
+    display: none;
+  }
+
+/*base*/
+
+  .base{
+    width: 100%;
+    height: 410px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .base-2{
+    width: 100%;
+    padding-top:10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .base-flex{
+    display: flex;
+    gap: 10px;
+  }
+  .base-logo {
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+    margin:15px 15px 0 15px;
+  }
+  .base-img-txt{
+    font-size: 11px;
+    padding: none;
+  }
+  .base-div {
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .trusted-by-millions{
+    font-size: 30px;
+  }
+  .we-are-registered-as{
+    font-size: 17px;
+  }
+
+/*section B*/
+  .rectangle-copy-2 {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .yoga-illustration{
+    padding-bottom: 20px;
+  }
+  .yoga-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .yoga-learn-with-fund-guru{
+    font-size: 30px;
+  }
+/*section c*/
+
+  .rectangle-copy-3 {
+    padding-top:5px;
+    height: 800px
+  }
+  .rect-3-txt{
+    height:900px;
+    width: 100%;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .you-can-schedule-a-m{
+    padding-bottom: 20px;
+  }
+  .img-div{
+    margin-top: 30px;
+    height: 326px; 
+  }
+  .ask-the-expert {
+    padding-top: 15px;
+  }
+  .txt-img-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .rectangle {
+    width: 30px;
+    height: 30px;
+  }
+  .shape {
+    background-color: #00D09C;
+  }
+  .btn-flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bitmap {
+    display: none;
+  }
+
+  
+/*section D*/
+  .rectangle-copy-d{
+    height: 400px;
+    margin-bottom:0;
+    margin-top:0;
+  }
+  .chat-flex img{
+    width: 160px;
+    height: 70px;
+  }
+  .manage-your-investme{
+    padding-top:0;
+  }
+  .download-the-app-now {
+    padding-top: 50px;
+  }
+
+   
+/*accodion*/
+  .foot-rectangle{
+    display: none;
+  }
+  .accordion-footer{
+    display: block;
+  }
+  .footer-logo{
+    width: 50px;
+    height: 50px;
+  }
+  .accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+  .accordion-btn{
+    color: #222222;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion-btn::after{
+    content: '+';
+    font-size: 20px;
+    opacity: 0.4000000059604645;
+  }
+  .active::after{
+    content: '-';
+    font-size: 30px;
+    opacity: 0.4000000059604645;
+ 
+  }
+  .content{
+    display: none;
+    overflow: hidden;
+  }
+  .content p{
+    padding:10px 20px 10px 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .foot-link {
+
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .foot-link li{
+    padding: 5px;
+  }
+  .contact-as{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .download{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
   .down-img{
     display: flex;
     gap: 10px;
-  }
+ }
   .yoga-flex{
     display: flex;
   }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  
 /*footer*/
-.foot-rectangle{
+  .foot-rectangle{
     display: none;
-   }
-   
-   /*foot*/
-   
-   hr{
-     width: 100%;
-     opacity: 0.199999988079071;
-   }
-   .foot{
+  }
+ 
+/*foot*/
+ 
+  hr{
+    width: 100%;
+    opacity: 0.199999988079071;
+ }
+  .foot{
      padding-top:90px;
      padding-bottom: 14px;
      flex-direction: column-reverse;
      align-items: center;
-   }
-   .foot-logo-flex{
-     display: flex;
-     flex-direction: column-reverse;
-     align-items: center;
-   }
-   .flex-foot{
-     display: flex;
-     justify-content: center;
-   }
+  }
+  .foot-logo-flex{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .flex-foot{
+    display: flex;
+    justify-content: center;
+  }
+  
 }
+
+
+
+
+
+
+
+
+
